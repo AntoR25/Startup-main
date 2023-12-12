@@ -8,30 +8,31 @@ const { data: posts } = await useAsyncData('latest-posts', () =>
 </script>
 
 <template>
-  <section>
-    <h1 class="text-5xl font-bold mt-20">👋🏻 Hello, I'm Dan Vega!</h1>
-    <p class="text-base text-gray-900 p-2 italic">Spring Developer Advocate at VMware</p>
-  </section>
-  <section class="flex flex-col md:flex-row">
+ <section>
+  <h1 class="text-5xl font-bold mt-20">
+    <span style="color: #29ABE2;">A</span>nime
+    <span style="color: #29ABE2;">C</span>haracter
+    <span style="color: #29ABE2;">S</span>prite
+</h1>
+    <p class="text-base text-gray-1300 border-l-4 border-black pl-4 italic my-4">Explorons ensemble l'univers de l'anime et de ses personnages</p>
+</section>
+<section class="flex flex-col md:flex-row">
     <div class="md:w-3/4">
-      <h2 class="text-3xl font-bold mt-8">My Story</h2>
-      <p class="text-lg py-2">
-        I am a Software Engineer living just outside of one of my favorite places in the world, Cleveland, Ohio. I am a
-        self-taught programmer who firmly believes that you can accomplish anything in this life if you put your mind to
-        it,
-        roll up your sleeves and are willing to put in the work.
-      </p>
-      <p class="text-lg py-2">
-        I have been writing software for over 20+ years now and I use my knowledge, passion, and influence to help other
-        developers achieve their goals. I teach online and currently, have over 160,000 students.
-      </p>
-      <p class="text-lg py-2">
-        In my personal life I am a husband to my best friend in the world and a father of two little girls. I enjoy
-        reading,
-        running and lifting weights to get me through the week.
-      </p>
+        <h2 class="text-3xl font-bold mb-4 mt-2">Notre Histoire</h2>
+        <hr class="mt-3 border-t-2 border-blue-400 w-40">
+        <p class="text-lg py-1">
+            Nous sommes une équipe passionnée chez Anime Character Sprite, spécialisée dans la création de sprites uniques tirés de vos animes préférés. Notre mission est de fournir des ressources graphiques de haute qualité aux créateurs, aux développeurs et aux amateurs d'anime, afin d'enrichir leurs projets visuels avec des personnages inoubliables.
+        </p>
+        <hr class="mt-3 border-t-2 border-blue-400 w-40">
+        <p class="text-lg py-1">
+            Forts d'une expérience cumulée de plus de 20 ans, nous sommes des autodidactes convaincus que la passion et le travail acharné sont les clés du succès. Nous mettons nos connaissances et notre dévouement au service de la communauté des créateurs pour les aider à atteindre leurs objectifs.
+        </p>
+        <hr class="mt-3 border-t-2 border-blue-400 w-40">
+        <p class="text-lg py-1">
+            Chez Anime Character Sprite, nous croyons en la diversité des personnages et nous nous engageons à offrir une bibliothèque variée et constamment mise à jour. Nous sommes fiers de contribuer à la réalisation de projets uniques et inspirants.
+        </p>
     </div>
-    <img src="~/assets/images/danvega-avatar.png" class="w-1/2 md:max-w-sm p-8 mx-auto" />
+    <img src="https://remacle-antoine.be/icones/samourail%202.jpg" class="w-1/2 md:max-w-sm p-8 mx-auto" />
   </section>
 
   <section>

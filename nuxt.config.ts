@@ -19,9 +19,9 @@ export default defineNuxtConfig({
   apollo: {
     clients: {
       default: {
-        tokenName: 'github-token',
-        httpEndpoint: 'https://api.github.com/graphql'
-      }
-    }
-  }
-})
+        httpEndpoint:
+          "https://eu-west-2.cdn.hygraph.com/content/clpgpyruar0m401uk5otke57w/master",
+      },
+    },
+  },
+});

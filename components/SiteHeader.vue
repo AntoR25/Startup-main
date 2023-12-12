@@ -5,9 +5,11 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 const route = useRoute();
 
 const navigation = [
-  { name: 'Home', href: '/', current: route.name == 'index' },
+  { name: 'Acceuil', href: '/', current: route.name == 'index' },
   { name: 'Blog', href: '/blog', current: route.name.includes('blog') },
-  { name: 'Projects', href: '/projects', current: route.name == 'projects' },
+  { name: 'Produit', href: '/produit', current: route.name == 'produit' },
+  { name: 'Contact', href: '/contact', current: route.name == 'contact' },
+  { name: 'Equipe', href: '/équipe', current: route.name == 'équipe' },
   { name: 'Uses', href: '/uses', current: route.name == 'uses' },
 ]
 </script>
@@ -20,17 +22,17 @@ const navigation = [
           <!-- Mobile menu button-->
           <DisclosureButton
             class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-            <span class="sr-only">Open main menu</span>
+            <span class="sr-only">Ouvrir Menu</span>
             <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
             <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
           </DisclosureButton>
         </div>
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex flex-shrink-0 items-center">
-            <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-              alt="Your Company" />
-            <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-              alt="Your Company" />
+            <img class="block h-8 w-auto lg:hidden" src="https://remacle-antoine.be/icones/Fichier%205-bleu-8.png"
+              alt="Anime Character Sprite" />
+            <img class="hidden h-8 w-auto lg:block" src="https://remacle-antoine.be/icones/Fichier%205-bleu-8.png"
+              alt="Anime Character Sprite" />
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
