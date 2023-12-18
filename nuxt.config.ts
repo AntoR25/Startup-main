@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     clients: {
       default: {
         httpEndpoint:
-          "https://eu-west-2.cdn.hygraph.com/content/clpgpyruar0m401uk5otke57w/master",
+          "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clq0nwuu3soq601usa4250u2r/master",
       },
     },
   },

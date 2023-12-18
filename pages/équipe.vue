@@ -1,6 +1,6 @@
 <template>
     <section>
-      <h1 class="text-5xl font-bold mt-20">👋🏻 Hello, I'm Dan Vega!</h1>
+      <h1 class="text-5xl font-bold mt-20">Hello, I'm Dan Vega!</h1>
       <p class="text-base text-gray-900 p-2 italic">Spring Developer Advocate at VMware</p>
     </section>
     <section class="flex flex-col md:flex-row">

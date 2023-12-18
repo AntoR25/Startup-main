@@ -1,29 +1,23 @@
 <script setup>
 const query = gql`
-{
-  viewer {
-    repositories(first: 6, orderBy:{field:CREATED_AT,direction: DESC}) {
-      totalCount
-      nodes {
+  query Produits {
+    produits {
+      createdAt
+      id
+      publishedAt
+      texte
+      titre
+      updatedAt
+      image {
         id
-        name
-        createdAt
-        description
+        handle
+        fileName
+        mimeType
         url
-        forks {
-          totalCount
-        }
-        watchers {
-          totalCount
-        }
-        stargazers {
-          totalCount
-        }
       }
     }
   }
-}
-`
+`;
 
 const { data } = await useAsyncQuery(query);
 </script>
@@ -32,17 +26,19 @@ const { data } = await useAsyncQuery(query);
   <h1 class="text-3xl my-8">Projects</h1>
   <p class="text-lg mb-8">Here are some of my projects on GitHub.</p>
   <section class="grid grid-cols-2 gap-10">
-    <div v-for="project in data?.viewer.repositories.nodes" :key="project.id"
+    <div v-for="produit in data?.produits" :key="produit.id"
       class="p-8 border-4 my-4 rounded-lg hover:bg-gray-50">
-      <a :href="project.url" target="_blank">
-        <h2 class="text-2xl text-indigo-800 font-semibold mb-2 hover:underline">{{ project.name }}</h2>
+      <a :href="produit.url" target="_blank">
+        <h2 class="text-2xl text-indigo-800 font-semibold mb-2 hover:underline">{{ produit.titre }}</h2>
       </a>
-      <p>{{ project.description }}</p>
+      <p>{{ produit.texte }}</p>
+      
+      <!-- Ajoutez la balise img pour afficher l'image -->
+      <img :src="produit.image.url" :alt="produit.titre" class="w-full h-auto mt-4" />
+      
       <div class="mt-4">
-        <Icon name="fontisto:star" size="1.1rem" class="text-indigo-700" /> Stars: {{ project.stargazers.totalCount }}
-        <Icon name="system-uicons:branch" size="1.1rem" class="text-indigo-800" /> Forks: {{ project.forks.totalCount }}
-        <Icon name="system-uicons:eye" size="1.1rem" class="text-indigo-700" /> Watchers: {{
-          project.watchers.totalCount }}
+        <!-- Ajustez les propriétés en fonction de vos données GraphQL -->
+        <!-- Vous n'avez pas de propriété forks et watchers dans vos données GraphQL -->
       </div>
     </div>
   </section>
