@@ -1,24 +1,25 @@
 ---
-title: Getting Started with Nuxt 3
-description: This is a quick introduction on how to get started with Nuxt 3.
-date: 2023-05-24
-cover: clement-helardot-95YRwf6CNw8-unsplash.jpg
+title: Démarrer avec Nuxt 3
+description: Ceci est une introduction rapide sur la manière de commencer avec Nuxt 3. Ainsi que construire son app.vue
+date: 2023-12-24
+cover: nux2.jpg
 tags:
   - nuxt
   - vue
 ---
 
-# Getting Started with Nuxt 3
+# Démarrer avec Nuxt 3
 
-This is a quick introduction on how to get started with Nuxt 3. To get started you need to have Node.js installed on your machine. You can download it from [here](https://nodejs.org/en/download/). Once you have Node.js installed, you can install Nuxt 3 using the following command:
+Ceci est une brève introduction sur la manière de commencer avec Nuxt 3. Pour commencer, vous devez avoir Node.js installé sur votre machine. Vous pouvez le télécharger [ici](https://nodejs.org/en/download/). Une fois Node.js installé, vous pouvez installer Nuxt 3 en utilisant la commande suivante :
 
 ```bash
-npx nuxi init <project-name>
-cd <project-name>
+npx nuxi init <nom-du-projet>
+cd <nom-du-projet>
 npm i
 ```
 
-Next you can begin to build out your application by using `app.vue`.
+Ensuite, vous pouvez commencer à construire votre application en utilisant `app.vue`.
+
 
 ```vue
 <script setup></script>
@@ -26,7 +27,7 @@ Next you can begin to build out your application by using `app.vue`.
 <template>
   <div class="flex flex-col min-h-screen">
     <SiteHeader />
-    <main class=" mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 grow items-start w-full">
+    <main class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 grow items-start w-full">
       <NuxtPage />
     </main>
     <SiteFooter />

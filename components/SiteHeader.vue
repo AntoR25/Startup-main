@@ -2,16 +2,19 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 
+import { useRoute } from 'vue-router';
+
 const route = useRoute();
 
 const navigation = [
-  { name: 'Acceuil', href: '/', current: route.name == 'index' },
+  { name: 'Accueil', href: '/', current: route.name === 'index' },
   { name: 'Blog', href: '/blog', current: route.name.includes('blog') },
-  { name: 'Produit', href: '/produit', current: route.name == 'produit' },
-  { name: 'Contact', href: '/contact', current: route.name == 'contact' },
-  { name: 'Equipe', href: '/équipe', current: route.name == 'équipe' },
-  { name: 'Uses', href: '/uses', current: route.name == 'uses' },
-]
+  { name: 'Produit', href: '/produit', current: route.name === 'produit' },
+  { name: 'Contact', href: '/contact', current: route.name === 'contact' },
+  { name: 'Équipe', href: '/équipe', current: route.name === 'équipe' },
+  { name: 'Société', href: '/société', current: route.name === 'société' },
+];
+
 </script>
 
 <template>

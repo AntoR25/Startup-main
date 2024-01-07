@@ -11,7 +11,7 @@ const links = [
 <template>
   <footer class="bg-gray-800">
     <section class="mx-auto max-w-7xl px-2 sm:px-4 lg:py-6 text-gray-300 flex flex-row items-center">
-      <p class="flex-1">&copy; Antoine REMACLE 2023. All Rights Reserved</p>
+      <p class="flex-1">&copy; Antoine REMACLE 2023. Tout droit reservé</p>
       <div class="flex flex-row justify-center gap-4 mb-2 mt-2">
         <a v-for="link in links" :key="link.name" :href="link.href">
           <Icon :name="link.icon" size="1.5rem" class="text-gray-300" />
